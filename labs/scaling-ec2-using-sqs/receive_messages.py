@@ -28,7 +28,7 @@ while True:
     if "Messages" in messages:
         for message in messages["Messages"]:
             logging.info(f"Message body: {message['Body']}")
-            time.sleep(2)  # simulate work
+            time.sleep(1)  # simulate work
             sqs.delete_message(
                 QueueUrl=queue_url, ReceiptHandle=message["ReceiptHandle"]
             )
