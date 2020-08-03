@@ -1,0 +1,11 @@
+{
+
+  "Resources": {
+
+    "catpics": {
+      "Type": "AWS::S3::Bucket"
+    }
+
+  }
+
+}
