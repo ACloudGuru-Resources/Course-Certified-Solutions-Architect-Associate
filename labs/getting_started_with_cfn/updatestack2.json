@@ -3,7 +3,7 @@
     "catpics": {
       "Type": "AWS::S3::Bucket",
       "Properties": {
-        "BucketName": "catsareawesome123"
+        "BucketName": "catsareawesomeqasfgrthyuji"
       }
     },
     "dogpics": {
