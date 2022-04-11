@@ -1,33 +1,33 @@
 {
-  "AWSTemplateFormatVersion" : "2010-09-09",
+    "AWSTemplateFormatVersion" : "2010-09-09",
 
-  "Description" : "this template does XXXX",
+    "Description" : "this template does XXXX",
 
-  "Metadata" : {
+    "Metadata" : {
 
-  },
+    },
 
-  "Parameters" : {
+    "Parameters" : {
 
-  },
+    },
 
-  "Mappings" : {
+    "Mappings" : {
 
-  },
+    },
 
-  "Conditions" : {
+    "Conditions" : {
 
-  },
+    },
 
-  "Transform" : {
+    "Transform" : {
 
-  },
+    },
 
-  "Resources" : {
+    "Resources" : {
 
-  },
+    },
 
-  "Outputs" : {
+    "Outputs" : {
 
-  }
+    }
 }
