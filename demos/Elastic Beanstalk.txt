@@ -1,0 +1,42 @@
+# Lesson: Elastic Beanstalk
+# URL: https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/21359b7a-a8b4-4d08-8e30-48623869199f/e3662bd5-361e-43a7-9afc-c2c2f5c921e2/watch
+
+# To create your example application, you'll use the 'Create application' console wizard. It creates an Elastic Beanstalk application and launches an environment within it. An environment is the collection of AWS resources required to run your application code.
+
+# To create a service role for Elastic Beanstalk:
+
+1. Open the Identity and Access Management (IAM) console.
+2. Click 'Roles'.
+3. Click 'Create role'.
+4. Under 'Use cases for other AWS services', choose 'Elastic Beanstalk' and select 'Elastic Beanstalk - Customizable'.
+5. Click 'Next'.
+6. For 'Role name', type 'CustomServiceRoleForElasticBeanstalk'.
+7. Click 'Create role'.
+
+# To create an EC2 instance profile for Elastic Beanstalk:
+
+1. Open the Identity and Access Management (IAM) console.
+2. Click 'Roles'.
+3. Click 'Create role'.
+4. Under 'Common use cases', choose 'EC2'.
+5. Click 'Next'.
+6. Select the 'AWSElasticBeanstalkReadOnly' policy name.
+7. Click 'Next'.
+8. For 'Role name', type 'CustomEC2InstanceProfileForElasticBeanstalk'.
+9. Click 'Create role'.
+
+# To create an example application:
+
+1. Open the Elastic Beanstalk console.
+2. Click 'Create application'.
+3. For Application name enter 'beansarefun'.
+4. For Platform, choose 'Python'.
+5. Click 'Next'.
+6. For 'Use an existing service role', choose 'CustomServiceRoleForElasticBeanstalk'.
+7. For 'EC2 instance profile', choose CustomEC2InstanceProfileForElasticBeanstalk'.
+8. Click 'Next'.
+9. On the 'Set up networking, database, and tags - optional' page, click 'Next'.
+10. On the 'Configure instance traffic and scaling - optional' page, click 'Next'.
+11. On the 'Configure updates, monitoring, and logging - optional' page, under 'System' choose 'Basic', and under 'Managed platform updates' > 'Managed updates', uncheck the 'Activated' box. Click 'Next'.
+12. The Review page displays a summary of all your choices. Choose 'Submit' at the bottom of the page.
+13. Wait for the 'Successfully launched environment: Beansarefun-env' event and check the URL available under 'Environment overview' > 'Domain'.
